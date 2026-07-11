@@ -1,0 +1,364 @@
+/*==================================================
+                GOOGLE VARIABLES
+==================================================*/
+
+:root{
+
+    --primary:#4DB6AC;
+    --primary-dark:#2E8B83;
+
+    --secondary:#8FD3E8;
+
+    --accent:#6ED3CF;
+
+    --dark:#2E2E2E;
+
+    --text:#555;
+
+    --light:#F7FAFC;
+
+    --white:#FFFFFF;
+
+    --shadow:0 15px 40px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+    --transition:.35s ease;
+
+    --max-width:1200px;
+
+}
+/*==================================================
+                GOOGLE VARIABLES
+==================================================*/
+
+:root{
+
+    --primary:#4DB6AC;
+    --primary-dark:#2E8B83;
+
+    --secondary:#8FD3E8;
+
+    --accent:#6ED3CF;
+
+    --dark:#2E2E2E;
+
+    --text:#555;
+
+    --light:#F7FAFC;
+
+    --white:#FFFFFF;
+
+    --shadow:0 15px 40px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+    --transition:.35s ease;
+
+    --max-width:1200px;
+
+}
+/*==================================================
+                    RESET
+==================================================*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    color:var(--text);
+
+    background:var(--light);
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+section{
+
+    padding:110px 0;
+
+    position:relative;
+
+}
+
+.container{
+
+    width:min(90%,var(--max-width));
+
+    margin:auto;
+
+}
+/*==================================================
+                SCROLLBAR
+==================================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eee;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-dark);
+
+}
+/*==================================================
+                TYPOGRAPHY
+==================================================*/
+
+h1,h2,h3,h4{
+
+    color:var(--dark);
+
+    line-height:1.2;
+
+}
+
+h1{
+
+    font-size:4rem;
+
+    font-weight:700;
+
+}
+
+h2{
+
+    font-size:2.7rem;
+
+    margin-bottom:20px;
+
+}
+
+h3{
+
+    font-size:1.4rem;
+
+}
+
+p{
+
+    margin-bottom:18px;
+
+    color:#666;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-title span{
+
+    display:inline-block;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:10px;
+
+}
+
+.section-title p{
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+/*==================================================
+                    BUTTONS
+==================================================*/
+
+.btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:linear-gradient(135deg,
+    var(--primary),
+    var(--secondary));
+
+    color:white;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    transition:.35s;
+
+    font-weight:600;
+
+    box-shadow:0 10px 25px rgba(77,182,172,.35);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 35px rgba(77,182,172,.45);
+
+}
+
+.btn-secondary{
+
+    display:inline-flex;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+    transition:.35s;
+
+    font-weight:600;
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+/*==================================================
+                PRELOADER
+==================================================*/
+
+#preloader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:white;
+
+    z-index:99999;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.loader{
+
+    width:60px;
+
+    height:60px;
+
+    border:6px solid #ddd;
+
+    border-top:6px solid var(--primary);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+/*==================================================
+                CURSOR
+==================================================*/
+
+.cursor{
+
+    width:20px;
+
+    height:20px;
+
+    border:2px solid var(--primary);
+
+    border-radius:50%;
+
+    position:fixed;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+    transition:transform .15s ease;
+
+}
