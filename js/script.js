@@ -1,13 +1,44 @@
-window.addEventListener("load", () => {
+// Header al hacer scroll
 
-    const preloader = document.getElementById("preloader");
+const header = document.getElementById("header");
 
-    if (preloader) {
-        preloader.style.opacity = "0";
+window.addEventListener("scroll", () => {
 
-        setTimeout(() => {
-            preloader.style.display = "none";
-        }, 500);
+    if(window.scrollY > 50){
+
+        header.classList.add("scrolled");
+
+    }else{
+
+        header.classList.remove("scrolled");
+
     }
+
+});
+
+// Barra de progreso
+
+const progress = document.getElementById("progress-bar");
+
+window.addEventListener("scroll",()=>{
+
+    const total =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+
+    const progressWidth =
+    (window.scrollY/total)*100;
+
+    progress.style.width = progressWidth + "%";
+
+});
+
+// Inicializar AOS
+
+AOS.init({
+
+    duration:900,
+
+    once:true
 
 });
