@@ -1300,3 +1300,166 @@ p{
     font-weight:700;
 
 }
+/*==================================================
+            EXPERIENCIA
+==================================================*/
+
+#experiencia{
+
+    background:linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f7fbfc 100%
+    );
+
+}
+
+.current-work{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    margin:70px 0;
+
+}
+
+.work-card{
+
+    position:relative;
+
+    background:#fff;
+
+    border-radius:25px;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    overflow:hidden;
+
+}
+
+.work-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 28px 60px rgba(0,0,0,.14);
+
+}
+
+.work-card i{
+
+    font-size:3rem;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.badge{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+}
+
+.experience-title{
+
+    text-align:center;
+
+    margin:70px 0 40px;
+
+    color:var(--primary-dark);
+
+}
+
+.experience-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+.experience-item{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.experience-item:hover{
+
+    transform:translateX(8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+
+}
+
+.experience-item i{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff;
+
+    font-size:1.2rem;
+
+}
