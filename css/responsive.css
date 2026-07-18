@@ -264,6 +264,53 @@
 /* Tablets pequeñas */
 @media (max-width: 768px) {
 
+    #header {
+        padding: 14px 0;
+    }
+    
+    #header .container {
+        width: min(92%, 100%);
+    }
+    
+    .logo {
+        font-size: 1.05rem;
+        gap: 8px;
+    }
+    
+    .logo i {
+        font-size: 1.3rem;
+    }
+    
+    .menu-btn {
+        display: block;
+        z-index: 1100;
+    }
+    
+    #navbar {
+        position: fixed;
+        top: 72px;
+        left: -100%;
+        width: 100%;
+        background: rgba(255,255,255,.98);
+        backdrop-filter: blur(20px);
+        padding: 2rem 0;
+        transition: left .35s ease;
+        box-shadow: 0 15px 35px rgba(0,0,0,.08);
+    }
+    
+    #navbar.active {
+        left: 0;
+    }
+    
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    #navbar a {
+        font-size: 1.05rem;
+    }
 }
 
 /* Celulares */
@@ -273,5 +320,4 @@
 
 /* Celulares pequeños */
 @media (max-width: 390px) {
-
 }
