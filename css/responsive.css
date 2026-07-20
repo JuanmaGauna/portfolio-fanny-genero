@@ -311,6 +311,60 @@
     #navbar a {
         font-size: 1.05rem;
     }
+    /* comparar */
+    /*==================================================
+                BASE MOBILE
+==================================================*/
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: min(92%, 100%);
+    padding-inline: 0;
+}
+
+section {
+    padding: 80px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: clamp(2.2rem, 8vw, 3rem);
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: clamp(2rem, 7vw, 2.6rem);
+    line-height: 1.15;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.btn,
+.btn-primary,
+.btn-secondary {
+    width: 100%;
+    justify-content: center;
+}
+
+[class*="grid"] {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+}
 }
 
 /* Celulares */
