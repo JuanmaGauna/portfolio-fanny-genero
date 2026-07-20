@@ -264,28 +264,86 @@
 /* Tablets pequeñas */
 @media (max-width: 768px) {
 
+    /*==================================================
+                    BASE MOBILE
+    ==================================================*/
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: min(92%, 100%);
+        padding-inline: 0;
+    }
+
+    section {
+        padding: 80px 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: clamp(2.2rem, 8vw, 3rem);
+        line-height: 1.1;
+    }
+
+    h2 {
+        font-size: clamp(2rem, 7vw, 2.6rem);
+        line-height: 1.15;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .btn,
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    [class*="grid"] {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+
+    /*==================================================
+                    HEADER MOBILE
+    ==================================================*/
+
     #header {
         padding: 14px 0;
     }
-    
+
     #header .container {
         width: min(92%, 100%);
     }
-    
+
     .logo {
         font-size: 1.05rem;
         gap: 8px;
     }
-    
+
     .logo i {
         font-size: 1.3rem;
     }
-    
+
     .menu-btn {
         display: block;
         z-index: 1100;
     }
-    
+
     #navbar {
         position: fixed;
         top: 72px;
@@ -297,77 +355,85 @@
         transition: left .35s ease;
         box-shadow: 0 15px 35px rgba(0,0,0,.08);
     }
-    
+
     #navbar.active {
         left: 0;
     }
-    
+
     #navbar ul {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
     }
-    
+
     #navbar a {
         font-size: 1.05rem;
     }
-    /* comparar */
+
     /*==================================================
-                BASE MOBILE
-==================================================*/
+                    HERO MOBILE
+    ==================================================*/
 
-html,
-body {
-    overflow-x: hidden;
-}
+    .hero-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2.5rem;
+        width: 100%;
+    }
 
-.container {
-    width: min(92%, 100%);
-    padding-inline: 0;
-}
+    .hero-text,
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+    }
 
-section {
-    padding: 80px 0;
-}
+    .hero-text {
+        margin: 0 auto;
+    }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+    .hero-image img {
+        width: min(320px, 85vw);
+        margin: 0 auto;
+        display: block;
+    }
 
-h1 {
-    font-size: clamp(2.2rem, 8vw, 3rem);
-    line-height: 1.1;
-}
+    .hero-text h1 {
+        font-size: clamp(2.2rem, 9vw, 3rem);
+        line-height: 1.1;
+    }
 
-h2 {
-    font-size: clamp(2rem, 7vw, 2.6rem);
-    line-height: 1.15;
-}
+    .subtitle {
+        display: block;
+        margin-bottom: 1rem;
+    }
 
-h3 {
-    font-size: 1.4rem;
-}
+    .hero-locations {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
 
-p {
-    font-size: 1rem;
-    line-height: 1.7;
-}
+    .hero-highlights {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 
-.btn,
-.btn-primary,
-.btn-secondary {
-    width: 100%;
-    justify-content: center;
-}
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 
-[class*="grid"] {
-    grid-template-columns: 1fr !important;
-    gap: 1.5rem;
-}
-}
+    .scroll-down {
+        display: none;
+    }
 
-/* Celulares */
+}
 @media (max-width: 576px) {
 
 }
