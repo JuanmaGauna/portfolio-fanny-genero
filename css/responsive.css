@@ -588,7 +588,19 @@
 #contacto .map-btn {
     width: 100%;
     box-sizing: border-box;
-}
+} 
+
+
+    #contacto form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #contacto .info-card {
+        text-align: center;
+        padding: 1.5rem;
+    }
 
     /*==================================================
         FORMACIÓN + EXPERIENCIA MOBILE
