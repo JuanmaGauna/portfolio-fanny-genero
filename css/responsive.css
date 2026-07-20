@@ -417,7 +417,7 @@
         max-width: 34ch;
         margin: 1.5rem auto;
     }
-    
+
     .hero-text h1 {
         font-size: clamp(2.2rem, 9vw, 3rem);
         line-height: 1.1;
@@ -450,7 +450,41 @@
     .scroll-down {
         display: none;
     }
+    /*==================================================
+            ESPECIALIDADES MOBILE
+    ==================================================*/
 
+    #especialidades .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    #especialidades .card {
+        width: 100%;
+        max-width: 100%;
+        padding: 2rem 1.5rem;
+        margin: 0 auto;
+    }
+
+    #especialidades .card i {
+        font-size: 2.5rem;
+    }
+
+    #especialidades .card h3 {
+        font-size: 1.3rem;
+        margin: 1rem 0 .75rem;
+    }
+
+    #especialidades .card p {
+        font-size: .98rem;
+        line-height: 1.7;
+    }
+
+    #especialidades .section-title p {
+        max-width: 34ch;
+        margin: 1rem auto 0;
+    }
 }
 @media (max-width: 576px) {
 
