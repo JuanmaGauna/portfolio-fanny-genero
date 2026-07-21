@@ -556,50 +556,53 @@
                 CONTACTO MOBILE
 ==================================================*/
 
-#contacto .contact-grid {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 2rem !important;
-}
+    #contacto .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
 
-#contacto .contact-form,
-#contacto .contact-info {
-    padding: 1.5rem !important;
-}
+    #contacto .contact-form,
+    #contacto .contact-info {
+        padding: 1.25rem;
+        border-radius: 18px;
+    }
 
-#contacto .locations {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-}
-
-#contacto .location-card {
-    padding: 1rem;
-}
-
-#contacto iframe {
-    width: 100% !important;
-    max-width: 100%;
-    height: 220px;
-}
-
-#contacto input,
-#contacto textarea,
-#contacto .btn-primary,
-#contacto .map-btn {
-    width: 100%;
-    box-sizing: border-box;
-} 
-
-
-    #contacto form {
-        display: flex;
-        flex-direction: column;
+    #contacto .contact-form form {
         gap: 1rem;
     }
 
+    #contacto input,
+    #contacto textarea {
+        width: 100%;
+        padding: 14px 16px;
+    }
+
     #contacto .info-card {
+        display: flex;
+        flex-direction: column;
         text-align: center;
-        padding: 1.5rem;
+        gap: .75rem;
+    }
+
+    #contacto .locations {
+        gap: 1.5rem;
+    }
+
+    #contacto .location-card {
+        padding: 1rem;
+    }
+
+    #contacto .location-card iframe {
+        width: 100%;
+        height: 220px;
+        display: block;
+    }
+
+    #contacto .map-btn,
+    #contacto .btn-primary {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     /*==================================================
